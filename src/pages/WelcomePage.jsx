@@ -8,7 +8,6 @@ const WelcomePage = () => {
 
     const [nombre,setNombre] = React.useState(""); //Crea la variable "nombre", y lo inicializa con un string vacío.
 
-
     useEffect(() => { // Hook de Efecto, Añade funcionalidades en el ciclo de vida de la página
 
         console.log("Render") // Función que se ejecuta cada vez que se renderiza la página
@@ -59,7 +58,7 @@ const WelcomePage = () => {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="text-center">
-                            <button className="btn btn-primary" id="singlebutton"> Submit!</button>
+                            <button className="btn btn-primary" id="singlebutton" > Submit!</button>
                         </div>
                     </div>
                 </div>
