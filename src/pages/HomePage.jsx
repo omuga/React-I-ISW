@@ -13,12 +13,12 @@ import  { Container, Row, Col } from 'reactstrap';
 
 const HomePage = () => {
     return(
-        <div className = "container center_div">
+        <div>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
                 integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
                 crossOrigin="anonymous"></link>
             <title> Título de Home</title>
-            <NavigationComponent/>
+            <NavigationComponent></NavigationComponent>
             <Row>
                 <Col>
                     <Container className='p-4'>

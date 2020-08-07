@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import NavigationComponent from '../components/NavigationComponent';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import  { Container, Row, Col } from 'reactstrap';
+import  { Container, Row, Col, Form, FormGroup, Input  } from 'reactstrap';
 
 const WelcomePage = () => {
 
@@ -26,7 +26,10 @@ const WelcomePage = () => {
     }
 
     return(
-        <div className = "container center_div">
+        <div>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
+                integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
+                crossOrigin="anonymous"></link>
             <title> Título de 'WelcomePage'</title>
             <NavigationComponent/>
             <Row>
@@ -51,18 +54,21 @@ const WelcomePage = () => {
                     </Container>
                 </Col>
             </Row>
-            <form>
-                <div className="form-group">                              
-                    <input  name="nombre" type="text" className="form-control input-sm" onChange = {(event) => handleChange(event)} ></input>
-                </div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <div className="text-center">
-                            <button className="btn btn-primary" id="singlebutton" > Submit!</button>
-                        </div>
-                    </div>
-                </div>
-            </form> 
+            <Container>
+                <Form>
+                    <FormGroup> 
+                    <Input type = "text" name = "nombre" placeholder = "Nombre" onChange = {(event) => handleChange(event)}> </Input>      
+                    </FormGroup> 
+                    <Row>
+                        <Col>
+                            <div className="text-center">
+                                <button className="btn btn-primary" id="singlebutton" > Submit!</button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Form> 
+            </Container>
+
             </div>
     )
 }

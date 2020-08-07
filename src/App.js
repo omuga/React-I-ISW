@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomePage from './pages/WelcomePage';
 import HomePage from './pages/HomePage';
 import TiendasPage from './pages/TiendasPage';
+import TiendasFormPage from './pages/TiendasFormPage';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Switch>
         <Route exact path ="/welcome" component={WelcomePage}></Route>
         <Route exact path ="/tiendas" component={TiendasPage}></Route>
+        <Route exact path = "/tiendasForm" component= {TiendasFormPage}></Route>
         <Route exact path = "/" component ={HomePage}></Route>
       </Switch>
     </Router>
